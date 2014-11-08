@@ -81,6 +81,8 @@
 		C362B3F61A0E5CE200E54F84 /* DPLife */ = {
 			isa = PBXGroup;
 			children = (
+				C362B41F1A0E607100E54F84 /* View */,
+				C362B41D1A0E5FF300E54F84 /* Controller */,
 				C362B3FB1A0E5CE200E54F84 /* AppDelegate.h */,
 				C362B3FC1A0E5CE200E54F84 /* AppDelegate.m */,
 				C362B3FE1A0E5CE200E54F84 /* ViewController.h */,
@@ -117,6 +119,20 @@
 				C362B4121A0E5CE200E54F84 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C362B41D1A0E5FF300E54F84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C362B41F1A0E607100E54F84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
