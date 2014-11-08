@@ -14,6 +14,7 @@
 		C362B4051A0E5CE200E54F84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C362B4041A0E5CE200E54F84 /* Images.xcassets */; };
 		C362B4081A0E5CE200E54F84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C362B4061A0E5CE200E54F84 /* LaunchScreen.xib */; };
 		C362B4141A0E5CE200E54F84 /* DPLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B4131A0E5CE200E54F84 /* DPLifeTests.m */; };
+		C362B4241A0E63FA00E54F84 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B4231A0E63FA00E54F84 /* BaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C362B40D1A0E5CE200E54F84 /* DPLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C362B4121A0E5CE200E54F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C362B4131A0E5CE200E54F84 /* DPLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLifeTests.m; sourceTree = "<group>"; };
+		C362B4221A0E63FA00E54F84 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		C362B4231A0E63FA00E54F84 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 		C362B4201A0E636300E54F84 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C362B4221A0E63FA00E54F84 /* BaseController.h */,
+				C362B4231A0E63FA00E54F84 /* BaseController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			files = (
 				C362B4001A0E5CE200E54F84 /* ViewController.m in Sources */,
 				C362B3FD1A0E5CE200E54F84 /* AppDelegate.m in Sources */,
+				C362B4241A0E63FA00E54F84 /* BaseController.m in Sources */,
 				C362B3FA1A0E5CE200E54F84 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
