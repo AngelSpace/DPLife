@@ -26,6 +26,10 @@
 		C362B4461A0E660A00E54F84 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B43B1A0E660A00E54F84 /* AFURLRequestSerialization.m */; };
 		C362B4471A0E660A00E54F84 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B43D1A0E660A00E54F84 /* AFURLResponseSerialization.m */; };
 		C362B4481A0E660A00E54F84 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B43F1A0E660A00E54F84 /* AFURLSessionManager.m */; };
+		C362B44A1A0E6C2A00E54F84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362B4491A0E6C2A00E54F84 /* Security.framework */; };
+		C362B44C1A0E6C3700E54F84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362B44B1A0E6C3700E54F84 /* MobileCoreServices.framework */; };
+		C362B44E1A0E6C4E00E54F84 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C362B44D1A0E6C4E00E54F84 /* SystemConfiguration.framework */; };
+		C362B4531A0E6D3000E54F84 /* StoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = C362B4521A0E6D3000E54F84 /* StoreController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,11 @@
 		C362B43D1A0E660A00E54F84 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		C362B43E1A0E660A00E54F84 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		C362B43F1A0E660A00E54F84 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C362B4491A0E6C2A00E54F84 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C362B44B1A0E6C3700E54F84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C362B44D1A0E6C4E00E54F84 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C362B4511A0E6D3000E54F84 /* StoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreController.h; sourceTree = "<group>"; };
+		C362B4521A0E6D3000E54F84 /* StoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C362B44E1A0E6C4E00E54F84 /* SystemConfiguration.framework in Frameworks */,
+				C362B44C1A0E6C3700E54F84 /* MobileCoreServices.framework in Frameworks */,
+				C362B44A1A0E6C2A00E54F84 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +114,7 @@
 			children = (
 				C362B3F61A0E5CE200E54F84 /* DPLife */,
 				C362B4101A0E5CE200E54F84 /* DPLifeTests */,
+				C362B44F1A0E6CA600E54F84 /* framework */,
 				C362B3F51A0E5CE200E54F84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +175,7 @@
 		C362B4201A0E636300E54F84 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C362B4501A0E6D1A00E54F84 /* Store */,
 				C362B4221A0E63FA00E54F84 /* BaseController.h */,
 				C362B4231A0E63FA00E54F84 /* BaseController.m */,
 				C362B4251A0E64C200E54F84 /* DPNavigationController.h */,
@@ -211,6 +225,25 @@
 				C362B43F1A0E660A00E54F84 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		C362B44F1A0E6CA600E54F84 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				C362B44D1A0E6C4E00E54F84 /* SystemConfiguration.framework */,
+				C362B44B1A0E6C3700E54F84 /* MobileCoreServices.framework */,
+				C362B4491A0E6C2A00E54F84 /* Security.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		C362B4501A0E6D1A00E54F84 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				C362B4511A0E6D3000E54F84 /* StoreController.h */,
+				C362B4521A0E6D3000E54F84 /* StoreController.m */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +359,7 @@
 				C362B3FA1A0E5CE200E54F84 /* main.m in Sources */,
 				C362B4411A0E660A00E54F84 /* AFHTTPRequestOperationManager.m in Sources */,
 				C362B4441A0E660A00E54F84 /* AFSecurityPolicy.m in Sources */,
+				C362B4531A0E6D3000E54F84 /* StoreController.m in Sources */,
 				C362B4471A0E660A00E54F84 /* AFURLResponseSerialization.m in Sources */,
 				C362B4401A0E660A00E54F84 /* AFHTTPRequestOperation.m in Sources */,
 			);
