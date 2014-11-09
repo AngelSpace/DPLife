@@ -34,6 +34,9 @@
 		C368ECEF1A0F75C600AEB8C8 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C368ECEE1A0F75C600AEB8C8 /* DPRequest.m */; };
 		C368ECF51A0F7D6300AEB8C8 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C368ECF41A0F7D6300AEB8C8 /* NetworkManager.m */; };
 		C368ECF81A0F825C00AEB8C8 /* DPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C368ECF71A0F825C00AEB8C8 /* DPResponse.m */; };
+		C368ECFF1A0F8F3C00AEB8C8 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368ECFE1A0F8F3C00AEB8C8 /* UserController.m */; };
+		C368ED031A0F918800AEB8C8 /* tab_user_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = C368ED011A0F918800AEB8C8 /* tab_user_nor.png */; };
+		C368ED041A0F918800AEB8C8 /* tab_user_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = C368ED021A0F918800AEB8C8 /* tab_user_sel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,10 @@
 		C368ECF41A0F7D6300AEB8C8 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		C368ECF61A0F825C00AEB8C8 /* DPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPResponse.h; sourceTree = "<group>"; };
 		C368ECF71A0F825C00AEB8C8 /* DPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPResponse.m; sourceTree = "<group>"; };
+		C368ECFD1A0F8F3C00AEB8C8 /* UserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserController.h; sourceTree = "<group>"; };
+		C368ECFE1A0F8F3C00AEB8C8 /* UserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
+		C368ED011A0F918800AEB8C8 /* tab_user_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_user_nor.png; sourceTree = "<group>"; };
+		C368ED021A0F918800AEB8C8 /* tab_user_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_user_sel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +154,7 @@
 				C362B3FB1A0E5CE200E54F84 /* AppDelegate.h */,
 				C362B3FC1A0E5CE200E54F84 /* AppDelegate.m */,
 				C362B4201A0E636300E54F84 /* Controller */,
+				C368ED001A0F908500AEB8C8 /* Image */,
 				C362B4041A0E5CE200E54F84 /* Images.xcassets */,
 				C362B4061A0E5CE200E54F84 /* LaunchScreen.xib */,
 				C362B4011A0E5CE200E54F84 /* Main.storyboard */,
@@ -190,6 +198,7 @@
 		C362B4201A0E636300E54F84 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C368ECFC1A0F8F2A00AEB8C8 /* User */,
 				C362B4501A0E6D1A00E54F84 /* Store */,
 				C362B4221A0E63FA00E54F84 /* BaseController.h */,
 				C362B4231A0E63FA00E54F84 /* BaseController.m */,
@@ -284,6 +293,24 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		C368ECFC1A0F8F2A00AEB8C8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C368ECFD1A0F8F3C00AEB8C8 /* UserController.h */,
+				C368ECFE1A0F8F3C00AEB8C8 /* UserController.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C368ED001A0F908500AEB8C8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C368ED011A0F918800AEB8C8 /* tab_user_nor.png */,
+				C368ED021A0F918800AEB8C8 /* tab_user_sel.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,7 +393,9 @@
 			files = (
 				C362B4031A0E5CE200E54F84 /* Main.storyboard in Resources */,
 				C362B4081A0E5CE200E54F84 /* LaunchScreen.xib in Resources */,
+				C368ED031A0F918800AEB8C8 /* tab_user_nor.png in Resources */,
 				C362B4051A0E5CE200E54F84 /* Images.xcassets in Resources */,
+				C368ED041A0F918800AEB8C8 /* tab_user_sel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +428,7 @@
 				C362B3FA1A0E5CE200E54F84 /* main.m in Sources */,
 				C362B4411A0E660A00E54F84 /* AFHTTPRequestOperationManager.m in Sources */,
 				C368ECEF1A0F75C600AEB8C8 /* DPRequest.m in Sources */,
+				C368ECFF1A0F8F3C00AEB8C8 /* UserController.m in Sources */,
 				C368ECF81A0F825C00AEB8C8 /* DPResponse.m in Sources */,
 				C362B4441A0E660A00E54F84 /* AFSecurityPolicy.m in Sources */,
 				C362B4531A0E6D3000E54F84 /* StoreController.m in Sources */,

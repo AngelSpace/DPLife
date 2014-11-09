@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPNavigationController.h"
+#import "StoreController.h"
+#import "UserController.h"
 
-@interface DPTabBarController : UITabBarController
+@interface DPTabBarController : UITabBarController <UITabBarControllerDelegate>
+@property (nonatomic, retain) StoreController *storeCtrl;
+@property (nonatomic, retain) UserController *userCtrl;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DPTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    DPTabBarController *ctrl = [[DPTabBarController alloc] init];
+    [self.window setRootViewController:ctrl];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     return YES;
 }
