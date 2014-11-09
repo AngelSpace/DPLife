@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AFNetworking.h"
+#import "DPRequest.h"
 
 @interface ViewController ()
 
@@ -18,19 +18,39 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-	[manager GET:@"http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=W69oaDTCfuGwzNwmtVvgWfGH" parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
-	    NSLog(@"JSON:%@", responseObject);
-	} failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
-	    NSLog(@"Error:%@", error);
-	}];
+
+	DPRequest *request = [[DPRequest alloc] init];
+	request.delegate = self;
+	request.tag = 0;
+	[request executeGetRequest:@"http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=W69oaDTCfuGwzNwmtVvgWfGH"];
+
+	DPRequest *res = [[DPRequest alloc] init];
+    res.delegate = self;
+	res.tag = 1;
+	[res executeGetRequest:@"http://api.map.baidu.com/telematics/v3/weather?location=%E5%8D%97%E4%BA%AC&output=json&ak=W69oaDTCfuGwzNwmtVvgWfGH"];
 }
 
 - (void)didReceiveMemoryWarning
 {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+}
+
+- (void)dpReqiestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json
+{
+	if (request.tag == 0) {
+		NSLog(@"aaaaaa");
+	}
+
+	if (request.tag == 1) {
+		NSLog(@"bbbbbb");
+	}
+
+	NSLog(@"%@", json);
+}
+
+- (void)dpReqiestFailed:(DPRequest *)request Error:(NSError *)error
+{
 }
 
 @end

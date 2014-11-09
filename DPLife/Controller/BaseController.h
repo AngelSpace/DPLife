@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPRequest.h"
 
-@interface BaseController : UIViewController
+@interface BaseController : UIViewController <DPResuestDelegate>
 
 @end

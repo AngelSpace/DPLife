@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseController.h"
+#import "DPRequest.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : BaseController
 
 @end
-
