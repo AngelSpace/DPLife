@@ -37,6 +37,7 @@
 		C368ECFF1A0F8F3C00AEB8C8 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368ECFE1A0F8F3C00AEB8C8 /* UserController.m */; };
 		C368ED031A0F918800AEB8C8 /* tab_user_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = C368ED011A0F918800AEB8C8 /* tab_user_nor.png */; };
 		C368ED041A0F918800AEB8C8 /* tab_user_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = C368ED021A0F918800AEB8C8 /* tab_user_sel.png */; };
+		C3D749041A110DC800810559 /* DPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D749031A110DC800810559 /* DPConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,6 @@
 		C362B4521A0E6D3000E54F84 /* StoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreController.m; sourceTree = "<group>"; };
 		C368ECE81A0F6EDC00AEB8C8 /* DataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtils.h; sourceTree = "<group>"; };
 		C368ECE91A0F6EDC00AEB8C8 /* DataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtils.m; sourceTree = "<group>"; };
-		C368ECEB1A0F704400AEB8C8 /* DPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
 		C368ECED1A0F75C600AEB8C8 /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
 		C368ECEE1A0F75C600AEB8C8 /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		C368ECF31A0F7D6300AEB8C8 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -106,6 +106,8 @@
 		C368ECFE1A0F8F3C00AEB8C8 /* UserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
 		C368ED011A0F918800AEB8C8 /* tab_user_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_user_nor.png; sourceTree = "<group>"; };
 		C368ED021A0F918800AEB8C8 /* tab_user_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_user_sel.png; sourceTree = "<group>"; };
+		C3D749021A110DC800810559 /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		C3D749031A110DC800810559 /* DPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,7 +277,8 @@
 			children = (
 				C368ECE81A0F6EDC00AEB8C8 /* DataUtils.h */,
 				C368ECE91A0F6EDC00AEB8C8 /* DataUtils.m */,
-				C368ECEB1A0F704400AEB8C8 /* DPConstants.h */,
+				C3D749021A110DC800810559 /* DPConstants.h */,
+				C3D749031A110DC800810559 /* DPConstants.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				C368ECEF1A0F75C600AEB8C8 /* DPRequest.m in Sources */,
 				C368ECFF1A0F8F3C00AEB8C8 /* UserController.m in Sources */,
 				C368ECF81A0F825C00AEB8C8 /* DPResponse.m in Sources */,
+				C3D749041A110DC800810559 /* DPConstants.m in Sources */,
 				C362B4441A0E660A00E54F84 /* AFSecurityPolicy.m in Sources */,
 				C362B4531A0E6D3000E54F84 /* StoreController.m in Sources */,
 				C362B4471A0E660A00E54F84 /* AFURLResponseSerialization.m in Sources */,

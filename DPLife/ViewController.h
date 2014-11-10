@@ -12,4 +12,6 @@
 
 @interface ViewController : BaseController
 
+- (NSDictionary *)parseQueryString:(NSString *)query;
+
 @end

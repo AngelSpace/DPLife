@@ -11,8 +11,8 @@
 @class DPRequest;
 @protocol DPResuestDelegate <NSObject>
 
-- (void)dpReqiestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json;
-- (void)dpReqiestFailed:(DPRequest *)request Error:(NSError *)error;
+- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json;
+- (void)dpRequestFailed:(DPRequest *)request Error:(NSError *)error;
 
 @end
 
@@ -23,4 +23,7 @@
 - (void)executeGetRequest:(NSString *)data;
 - (void)executePostRequest:(NSString *)data Patams:(NSDictionary *)dict;
 
+
+- (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params;
+- (NSDictionary *)parseQueryString:(NSString *)query;
 @end

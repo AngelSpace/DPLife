@@ -36,11 +36,11 @@
    }
  */
 
-- (void)dpReqiestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json
+- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json
 {
 }
 
-- (void)dpReqiestFailed:(DPRequest *)request Error:(NSError *)error
+- (void)dpRequestFailed:(DPRequest *)request Error:(NSError *)error
 {
 }
 
