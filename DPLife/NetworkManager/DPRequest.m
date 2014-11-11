@@ -15,10 +15,10 @@
 @implementation DPRequest
 @synthesize tag, delegate;
 
-
+// get request
 - (void)executeGetRequest:(NSString *)data
 {
-	NSLog(@"点评请求%@", data);
+	NSLog(@"Get : %@", data);
 	[self serializeURL:data params:nil];
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:[self serializeURL:data params:nil] parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -32,11 +32,23 @@
 	}];
 }
 
+// post request
 - (void)executePostRequest:(NSString *)data Patams:(NSDictionary *)dict
 {
+	NSLog(@"Post : %@", data);
+	[self serializeURL:data params:nil];
+	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+
+	[manager POST:[self serializeURL:data params:nil] parameters:dict success: ^(AFHTTPRequestOperation *operation, id responseObject) {
+	    if ([delegate respondsToSelector:@selector(dpRequestSucceed:JsonData:)]) {
+	        [delegate dpRequestSucceed:self JsonData:responseObject];
+		}
+	} failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
+	    if ([delegate respondsToSelector:@selector(dpRequestFailed:Error:)]) {
+	        [delegate dpRequestFailed:self Error:error];
+		}
+	}];
 }
-
-
 
 - (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params
 {
