@@ -7,6 +7,9 @@
 //
 
 #import "BaseController.h"
+#import "PullTableView.h"
 
-@interface StoreController : BaseController
+@interface StoreController : BaseController <PullTableViewDelegate,UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) PullTableView *tableView;
 @end
