@@ -53,6 +53,8 @@
 		C36EBEA21A1B967C00A1AF34 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE901A1B967C00A1AF34 /* UIImageView+HighlightedWebCache.m */; };
 		C36EBEA31A1B967C00A1AF34 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE921A1B967C00A1AF34 /* UIImageView+WebCache.m */; };
 		C36EBEA41A1B967C00A1AF34 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C36EBE941A1B967C00A1AF34 /* UIView+WebCacheOperation.m */; };
+		C36EBEA71A1B9E8100A1AF34 /* StoreItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C36EBEA61A1B9E8100A1AF34 /* StoreItemCell.m */; };
+		C36EBEAB1A1BA1CF00A1AF34 /* StoreResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C36EBEAA1A1BA1CF00A1AF34 /* StoreResponse.m */; };
 		C36ED8A51A1247F8004ABB0E /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C36ED8951A1247F8004ABB0E /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C36ED8A61A1247F8004ABB0E /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C36ED8971A1247F8004ABB0E /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C36ED8A71A1247F8004ABB0E /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C36ED8991A1247F8004ABB0E /* MessageInterceptor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -167,6 +169,10 @@
 		C36EBE921A1B967C00A1AF34 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		C36EBE931A1B967C00A1AF34 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		C36EBE941A1B967C00A1AF34 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		C36EBEA51A1B9E8100A1AF34 /* StoreItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItemCell.h; sourceTree = "<group>"; };
+		C36EBEA61A1B9E8100A1AF34 /* StoreItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItemCell.m; sourceTree = "<group>"; };
+		C36EBEA91A1BA1CF00A1AF34 /* StoreResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreResponse.h; sourceTree = "<group>"; };
+		C36EBEAA1A1BA1CF00A1AF34 /* StoreResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreResponse.m; sourceTree = "<group>"; };
 		C36ED8941A1247F8004ABB0E /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		C36ED8951A1247F8004ABB0E /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		C36ED8961A1247F8004ABB0E /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 				C362B4041A0E5CE200E54F84 /* Images.xcassets */,
 				C362B4061A0E5CE200E54F84 /* LaunchScreen.xib */,
 				C362B4011A0E5CE200E54F84 /* Main.storyboard */,
+				C36EBEA81A1BA1B200A1AF34 /* Model */,
 				C368ECEC1A0F75AB00AEB8C8 /* NetworkManager */,
 				C362B3F71A0E5CE200E54F84 /* Supporting Files */,
 				C362B42B1A0E65D400E54F84 /* ThirdParty */,
@@ -294,6 +301,8 @@
 		C362B4211A0E636300E54F84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C36EBEA51A1B9E8100A1AF34 /* StoreItemCell.h */,
+				C36EBEA61A1B9E8100A1AF34 /* StoreItemCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -433,6 +442,15 @@
 				C36EBE941A1B967C00A1AF34 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		C36EBEA81A1BA1B200A1AF34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C36EBEA91A1BA1CF00A1AF34 /* StoreResponse.h */,
+				C36EBEAA1A1BA1CF00A1AF34 /* StoreResponse.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C36ED8921A1247F8004ABB0E /* EGOTableViewPullRefresh */ = {
@@ -593,6 +611,7 @@
 				C36ED8A61A1247F8004ABB0E /* LoadMoreTableFooterView.m in Sources */,
 				C362B4271A0E64C200E54F84 /* DPNavigationController.m in Sources */,
 				C362B4001A0E5CE200E54F84 /* ViewController.m in Sources */,
+				C36EBEA71A1B9E8100A1AF34 /* StoreItemCell.m in Sources */,
 				C362B4431A0E660A00E54F84 /* AFNetworkReachabilityManager.m in Sources */,
 				C36EBEA41A1B967C00A1AF34 /* UIView+WebCacheOperation.m in Sources */,
 				C362B3FD1A0E5CE200E54F84 /* AppDelegate.m in Sources */,
@@ -625,6 +644,7 @@
 				C362B4471A0E660A00E54F84 /* AFURLResponseSerialization.m in Sources */,
 				C36ED8A51A1247F8004ABB0E /* EGORefreshTableHeaderView.m in Sources */,
 				C36ED8A81A1247F8004ABB0E /* PullTableView.m in Sources */,
+				C36EBEAB1A1BA1CF00A1AF34 /* StoreResponse.m in Sources */,
 				C362B4401A0E660A00E54F84 /* AFHTTPRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
