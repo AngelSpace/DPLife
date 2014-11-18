@@ -18,8 +18,11 @@
 // get request
 - (void)executeGetRequest:(NSString *)data
 {
-	NSLog(@"Get : %@", data);
 	[self serializeURL:data params:nil];
+    
+    NSLog(@"Get : %@", [self serializeURL:data params:nil]);
+
+    
 	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 	[manager GET:[self serializeURL:data params:nil] parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
 	    if ([delegate respondsToSelector:@selector(dpRequestSucceed:JsonData:)]) {

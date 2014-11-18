@@ -7,23 +7,34 @@
 //
 
 #import "StoreController.h"
+#import "UIImageView+WebCache.h"
 
 @interface StoreController ()
+
+@property (nonatomic, retain) UIImageView *testView;
 
 @end
 
 @implementation StoreController
 @synthesize tableView;
+@synthesize testView;
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 
-	tableView  = [[PullTableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT - 150) style:UITableViewStylePlain];
+	tableView  = [[PullTableView alloc] initWithFrame:CGRectMake(0, 280, SCREEN_WIDTH, SCREEN_HEIGHT - 150) style:UITableViewStylePlain];
 	tableView.delegate = self;
 	tableView.dataSource = self;
 	tableView.pullDelegate = self;
 	[self.view addSubview:tableView];
+    
+  
+    
+    testView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [testView sd_setImageWithURL:[NSURL URLWithString:@"http://i1.dpfile.com/pc/01a623d61162992a749af0df886e938f(278x200)/thumb.jpg"] placeholderImage:[UIImage imageNamed:@"tab_user_sel.png"]];
+    [self.view addSubview:testView];
+    
 	[tableView startRefresh];
 }
 
