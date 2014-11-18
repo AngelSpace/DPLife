@@ -14,3 +14,9 @@ https://github.com/emreberge/EGOTableViewPullRefresh
 
 
 https://github.com/AFNetworking/AFNetworking
+
+
+3、SDWebImage  图片处理
+
+
+https://github.com/rs/SDWebImage
