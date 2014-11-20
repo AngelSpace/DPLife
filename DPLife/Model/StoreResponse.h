@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Store.h"
 
 @interface StoreResponse : NSObject
 
-@property NSString *url;
-@property NSString *storeName;
-@property NSString *storeAddress;
+@property NSArray *storeArray;
+@property NSNumber *count;
+@property NSNumber *total_count;
 
--(id)initWithJsonData:(NSString *)data;
+- (id)initWithJsonData:(NSDictionary *)data;
 
 @end

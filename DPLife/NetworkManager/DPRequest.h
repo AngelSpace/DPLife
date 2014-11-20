@@ -11,7 +11,7 @@
 @class DPRequest;
 @protocol DPResuestDelegate <NSObject>
 
-- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json;
+- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)data;
 - (void)dpRequestFailed:(DPRequest *)request Error:(NSError *)error;
 
 @end

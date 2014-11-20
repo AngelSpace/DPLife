@@ -9,12 +9,13 @@
 #import "StoreResponse.h"
 
 @implementation StoreResponse
-@synthesize url, storeName, storeAddress;
 
+@synthesize storeArray, count, total_count;
 
-- (id)initWithJsonData:(NSString *)data
+- (id)initWithJsonData:(NSDictionary *)data
 {
 	if (self) {
+		storeArray = [data objectForKey:@"businesses"];
 	}
 
 	return self;

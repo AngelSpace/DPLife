@@ -9,7 +9,8 @@
 #import "BaseController.h"
 #import "PullTableView.h"
 
-@interface StoreController : BaseController <PullTableViewDelegate,UITableViewDelegate, UITableViewDataSource>
+@interface StoreController : BaseController <PullTableViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) PullTableView *tableView;
+@property NSArray *storeArray;
 @end

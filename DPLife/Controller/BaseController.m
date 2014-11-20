@@ -36,7 +36,7 @@
    }
  */
 
-- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)json
+- (void)dpRequestSucceed:(DPRequest *)request JsonData:(NSDictionary *)data
 {
 }
 

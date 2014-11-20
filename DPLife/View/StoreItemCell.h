@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImageView+WebCache.h"
+#import "Store.h"
 
 @interface StoreItemCell : UITableViewCell
 
@@ -15,6 +16,6 @@
 @property UILabel *storeNameLabel;
 @property UILabel *addressLabel;
 
--(void) updateView:()
+- (void)updateViewWith:(Store *)store;
 
 @end

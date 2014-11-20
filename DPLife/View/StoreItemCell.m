@@ -11,18 +11,27 @@
 @implementation StoreItemCell
 @synthesize thumbnail, storeNameLabel, addressLabel;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        thumbnail = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-        [self addSubview:thumbnail];
-        storeNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 0, 100, 20)];
-        [self addSubview:storeNameLabel];
-        addressLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 30, 100, 20)];
-        [self addSubview:addressLabel];
-    }
-    return self;
+	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+
+	if (self) {
+		thumbnail = [[UIImageView alloc] initWithFrame:CGRectMake(10, 15, 60, 60)];
+		[self addSubview:thumbnail];
+		storeNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 20, 200, 20)];
+		[self addSubview:storeNameLabel];
+		addressLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 55, 200, 20)];
+		[self addSubview:addressLabel];
+	}
+
+	return self;
+}
+
+- (void)updateViewWith:(Store *)store
+{
+	storeNameLabel.text = store.name;
+	[thumbnail sd_setImageWithURL:[NSURL URLWithString:store.s_photo_url] placeholderImage:[UIImage imageNamed:@"tab_user_sel.png"]];
+	addressLabel.text = store.address;
 }
 
 @end
