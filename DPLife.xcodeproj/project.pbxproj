@@ -537,7 +537,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = yp;
+				ORGANIZATIONNAME = "https://github.com/AngelSpace";
 				TargetAttributes = {
 					C362B3F31A0E5CE200E54F84 = {
 						CreatedOnToolsVersion = 6.1;
