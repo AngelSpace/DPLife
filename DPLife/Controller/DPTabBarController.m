@@ -29,16 +29,50 @@
 	DPNavigationController *nav2 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];
 	[navArray addObject:nav2];
 
+	DPNavigationController *nav3 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];
+	[navArray addObject:nav3];
+
+	DPNavigationController *nav4 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];
+	[navArray addObject:nav4];
+
 	self.viewControllers = navArray;
-	UIImage *storeImgNor = [UIImage imageNamed:@"tab_user_nor.png"];
-	UIImage *storeImgSel = [UIImage imageNamed:@"tab_user_sel.png"];
-	nav1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:storeImgSel tag:0];
-	[nav1.tabBarItem setFinishedSelectedImage:storeImgSel withFinishedUnselectedImage:storeImgNor];
+	UIImage *homeImgNor = [UIImage imageNamed:@"home_footbar_icon_dianping.png"];
+	UIImage *homeImgSel = [UIImage imageNamed:@"home_footbar_icon_dianping_pressed.png"];
 
-	nav2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:storeImgSel tag:1];
-	[nav2.tabBarItem setFinishedSelectedImage:storeImgSel withFinishedUnselectedImage:storeImgNor];
+	UIImage *groupImgNor = [UIImage imageNamed:@"home_footbar_icon_group.png"];
+	UIImage *groupImgSel = [UIImage imageNamed:@"home_footbar_icon_group_pressed.png"];
 
+	UIImage *foundImgNor = [UIImage imageNamed:@"home_footbar_icon_found.png"];
+	UIImage *foundImgSel = [UIImage imageNamed:@"home_footbar_icon_found_pressed.png"];
 
+	UIImage *myImgNor = [UIImage imageNamed:@"home_footbar_icon_my.png"];
+	UIImage *myImgSel = [UIImage imageNamed:@"home_footbar_icon_my_pressed.png"];
+
+	if ([homeImgNor respondsToSelector:@selector(imageWithRenderingMode:)]) {
+		homeImgNor = [homeImgNor imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		homeImgSel = [homeImgSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		groupImgNor = [groupImgNor imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		groupImgSel = [groupImgSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		foundImgNor = [foundImgNor imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		foundImgSel = [foundImgSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		myImgNor = [myImgNor imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+		myImgSel = [myImgSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+	}
+
+	nav1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:homeImgSel tag:0];
+	[nav1.tabBarItem setFinishedSelectedImage:homeImgSel withFinishedUnselectedImage:homeImgNor];
+
+	nav2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"团购" image:groupImgNor tag:1];
+	[nav2.tabBarItem setFinishedSelectedImage:groupImgSel withFinishedUnselectedImage:groupImgNor];
+
+	nav3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:foundImgNor tag:2];
+	[nav3.tabBarItem setFinishedSelectedImage:foundImgSel withFinishedUnselectedImage:foundImgNor];
+
+	nav4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:myImgNor tag:3];
+	[nav4.tabBarItem setFinishedSelectedImage:myImgSel withFinishedUnselectedImage:myImgNor];
+
+	[[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+	[[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor orangeColor], UITextAttributeTextColor, nil] forState:UIControlStateSelected];
 	self.delegate = self;
 }
 
@@ -47,15 +81,5 @@
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
 }
-
-/*
-   #pragma mark - Navigation
-
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-   }
- */
 
 @end
