@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C362B3F31A0E5CE200E54F84"
-               BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;.app"
+               BuildableName = "DPLife.app"
                BlueprintName = "DPLife"
                ReferencedContainer = "container:DPLife.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C362B40C1A0E5CE200E54F84"
-               BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;Tests.xctest"
+               BuildableName = "DPLifeTests.xctest"
                BlueprintName = "DPLifeTests"
                ReferencedContainer = "container:DPLife.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C362B40C1A0E5CE200E54F84"
-               BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;Tests.xctest"
+               BuildableName = "DPLifeTests.xctest"
                BlueprintName = "DPLifeTests"
                ReferencedContainer = "container:DPLife.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C362B3F31A0E5CE200E54F84"
-            BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;.app"
+            BuildableName = "DPLife.app"
             BlueprintName = "DPLife"
             ReferencedContainer = "container:DPLife.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C362B3F31A0E5CE200E54F84"
-            BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;.app"
+            BuildableName = "DPLife.app"
             BlueprintName = "DPLife"
             ReferencedContainer = "container:DPLife.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C362B3F31A0E5CE200E54F84"
-            BuildableName = "&#x70b9;&#x8bc4;&#x751f;&#x6d3b;.app"
+            BuildableName = "DPLife.app"
             BlueprintName = "DPLife"
             ReferencedContainer = "container:DPLife.xcodeproj">
          </BuildableReference>

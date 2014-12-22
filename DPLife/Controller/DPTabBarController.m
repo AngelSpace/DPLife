@@ -13,7 +13,7 @@
 @end
 
 @implementation DPTabBarController
-@synthesize userCtrl, storeCtrl;
+@synthesize userCtrl, homeCtrl, foundCtrl;
 
 
 - (void)viewDidLoad
@@ -21,15 +21,16 @@
 	[super viewDidLoad];
 	NSMutableArray *navArray = [NSMutableArray array];
 	userCtrl = [[UserController alloc] init];
-	storeCtrl = [[StoreController alloc] init];
+	homeCtrl = [[HomeController alloc] init];
+    foundCtrl = [[FoundController alloc] init];
 
-	DPNavigationController *nav1 = [[DPNavigationController alloc] initWithRootViewController:storeCtrl];
+	DPNavigationController *nav1 = [[DPNavigationController alloc] initWithRootViewController:homeCtrl];
 	[navArray addObject:nav1];
 
 	DPNavigationController *nav2 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];
 	[navArray addObject:nav2];
 
-	DPNavigationController *nav3 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];
+	DPNavigationController *nav3 = [[DPNavigationController alloc] initWithRootViewController:foundCtrl];
 	[navArray addObject:nav3];
 
 	DPNavigationController *nav4 = [[DPNavigationController alloc] initWithRootViewController:userCtrl];

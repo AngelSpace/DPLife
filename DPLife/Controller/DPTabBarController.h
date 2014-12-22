@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "DPNavigationController.h"
-#import "StoreController.h"
+#import "HomeController.h"
 #import "UserController.h"
+#import "FoundController.h"
 
 @interface DPTabBarController : UITabBarController <UITabBarControllerDelegate>
-@property (nonatomic, retain) StoreController *storeCtrl;
+@property (nonatomic, retain) HomeController *homeCtrl;
 @property (nonatomic, retain) UserController *userCtrl;
+@property (nonatomic, retain) FoundController *foundCtrl;
 
 @end
